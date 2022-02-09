@@ -31,18 +31,29 @@
     <div class="container" id="quizBlock" style="display: none">
       <div class="mb-5">
         <h2>Test your knowledge</h2>
-        - Time remaining <span id="time">01:00</span>
+        <div>Time remaining <span id="time">05:00</span> minutes!</div>
       </div>
       <div id="quizWrap"></div>
 
       <div>
-        <button type="button" class="btn btn-primary" id="btnSubmit">
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="btnSubmit"
+          value="btnSubmit"
+        >
           Submit Quiz
         </button>
-        <button type="button" class="btn btn-primary" id="btnReset">
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="btnReset"
+          onClick="refreshPage()"
+        >
           Reset Quiz
         </button>
-        <span id="score"></span>
+        <span id="results"></span>
       </div>
     </div>
 
